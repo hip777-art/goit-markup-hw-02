@@ -1,236 +1,215 @@
-/* ===========================
-   Reset / base
-   =========================== */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100%;
-}
-
 body {
-  margin: 0;
-  font-family: "Roboto", sans-serif; /* основной семейство по умолчанию */
-  color: #2e2f42;
-  background-color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    color: #434455;
 }
 
-/* ===========================
-   Layout helpers
-   =========================== */
-.container {
-  max-width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+ul {
+    list-style-type: none;
 }
 
-/* ===========================
-   Header
-   =========================== */
-.site-header {
-  padding: 20px 0;
-  background-color: transparent;
-  border-bottom: 1px solid rgba(46,47,66,0.04);
+
+a {
+text-decoration: none;
+font-style: normal;
 }
 
-.header-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+.nav-logo{
+    font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 117%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4d5ae5;
+}
+.nav-logo-studio{
+    font-family: "Raleway";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 117%;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #2e2f42;
 }
 
-/* ---------- Логотип ---------- */
-/* Класс .logo — латиница, маленькие, минимум 3 символа (webstudio) */
-.logo {
-  text-decoration: none;
-  display: inline-block;
-  /* требования: Raleway для логотипа */
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;            /* требование: 700 */
-  font-size: 18px;             /* требование: 18px */
-  line-height: 1.17;           /* требование: 1.17 */
-  letter-spacing: 0.03em;      /* требование: 0.03em */
-  text-transform: uppercase;   /* требование: uppercase */
-  color: #4d5ae5;              /* требование: #4d5ae5 */
+.nav-studio-foot {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #f4f4fd;
 }
 
-/* ===========================
-   Navigation
-   =========================== */
-.main-nav {
-  /* место для навигации */
+.nav-contacs {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+    
 }
 
-.nav-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 28px;
-  align-items: center;
+.address-items {
+    font-style: normal
 }
 
-/* Общее для ссылок меню */
-.nav-link {
-  text-decoration: none;
-  display: inline-block;
-  padding: 6px 2px;
-  font-size: 16px;
-  line-height: 1.5;          /* требование: line-height 1.5 */
-  letter-spacing: 0.02em;    /* требование: letter-spacing 0.02em */
-  transition: color 0.15s ease;
-  outline: none;
-  cursor: pointer;
+.nav-contacs-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
-/* Первый пункт — требования: color #2e2f42 */
-.nav-link--primary {
-  color: #2e2f42; /* требование: #2e2f42 для первого пункта */
+.section-title{
+background-color: #2E2F42;
 }
 
-/* Другие ссылки — требование: цвет #434455 */
-.nav-link--secondary {
-  color: #434455; /* требование: #434455 */
+.section-taem {
+background-color: #F4F4FD;
 }
 
-/* hover и focus — у всех ссылок цвет #404bbf */
-.nav-link:hover,
-.nav-link:focus {
-  color: #404bbf; /* требование: #404bbf при hover/focus */
-  outline: none;
+.footer-back {
+background-color: #2E2F42;
 }
 
-/* Для доступности — видимый фокус при навигации клавишами */
-.nav-link:focus-visible {
-  outline: 2px dashed rgba(64,75,191,0.25);
-  outline-offset: 3px;
+.body-back {
+background-color: #FFFFFF;
+
 }
 
-/* ===========================
-   Hero / Section
-   =========================== */
-.hero-section {
-  background-color: #2e2f42; /* требование: фон секции #2e2f42 */
-  padding-top: 120px;
-  padding-bottom: 120px;
-  text-align: center;        /* требование: заголовок центрируется */
+.nav-contacs-item:hover,
+.nav-contacs-item:focus {
+    color: #404BBF;
 }
 
-/* Заголовок секции */
-/* Имя класса sec-title — латиница, минимум 3 символа, дефис допустим */
-.sec-title {
-  margin: 0 auto 32px;
-  max-width: 920px;
-  font-size: 56px;           /* требование: 56px */
-  line-height: 1.07;         /* требование: 1.07 */
-  letter-spacing: 0.02em;    /* требование: 0.02em */
-  color: #ffffff;            /* требование: #ffffff */
-  font-weight: 700;
-  font-family: "Roboto", sans-serif;
-  text-align: center;        /* требование: text-align: center */
+.nav-contacs:hover,
+.nav-contacs:focus {
+    color: #404BBF;
 }
 
-/* ===========================
-   Button
-   =========================== */
-/* Класс .cta-button — латиница, маленькие, минимум 3 символа */
-.cta-button {
-  display: inline-block;
-  padding: 14px 28px;
-  border: none;
-  border-radius: 8px;
-  background-color: #4D5AE5;        /* требование: фон #4D5AE5 */
-  font-family: "Roboto", sans-serif;/* требование: Roboto */
-  font-weight: 500;                 /* требование: 500 */
-  font-size: 16px;                  /* требование: 16px */
-  line-height: 1.5;                 /* требование: 1.5 */
-  letter-spacing: 0.04em;           /* требование: 0.04em */
-  color: #ffffff;                   /* требование: белый текст */
-  cursor: pointer;                  /* требование: cursor: pointer */
-  transition: background-color 0.15s ease, transform 0.08s ease;
+.title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 107%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #2E2F42;
 }
 
-/* hover & focus для кнопки */
-.cta-button:hover,
-.cta-button:focus {
-  background-color: #404BBF; /* требование: #404BBF при hover/focus */
-  transform: translateY(-1px);
-  outline: none;
+
+
+.title-button {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        cursor: pointer;
+        background-color: #4D5AE5
 }
 
-.cta-button:focus-visible {
-  box-shadow: 0 0 0 4px rgba(64,75,191,0.12);
+.title-button:hover,
+.title-button:focus {
+    background-color: #404BBF
 }
 
-/* ===========================
-   Footer
-   =========================== */
-.site-footer {
-  padding: 28px 0;
-  background-color: #ffffff;
-  color: #2e2f42;
-  border-top: 1px solid rgba(46,47,66,0.04);
-  text-align: center;
+.text-definitions-title {
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
 }
 
-.footer-text {
-  margin: 0;
-  font-size: 14px;
+.text-definitions-parag {
+    font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #434455;
 }
 
-/* ===========================
-   Responsive tweaks
-   =========================== */
-@media (max-width: 900px) {
-  .container {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
-  .nav-list {
-    gap: 18px;
-  }
-
-  .hero-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-
-  .sec-title {
-    font-size: 40px;
-    padding: 0 10px;
-  }
+.section-taem-third {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2E2F42;
+    text-transform: capitalize
 }
 
-@media (max-width: 480px) {
-  .header-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
-  .nav-list {
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-
-  .sec-title {
-    font-size: 28px;
-    line-height: 1.15;
-  }
-
-  .cta-button {
-    width: 100%;
-    max-width: 320px;
-  }
+.list-team-hum {
+    background-color: #FFFFFF
 }
 
+.list-team-one {
+    background-color: #FFFFFF
+}
+
+.list-team-photo {
+    background-color: #FFFFFF
+}
+
+.section-taem-text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2E2F42;
+}
+
+.section-taem-about {
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #434455;
+}
+
+
+.title-portfolio-third {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 111%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2E2F42;
+        text-transform: capitalize
+}
+
+.section-portfolio-text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+}
+
+.section-portfolio-paragraph {
+
+        
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
+
+.text-bellow {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: #F4F4FD;
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus,
+.header-menu-link:active {
+    color: #fd9222;
+}
