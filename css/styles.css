@@ -1,12 +1,12 @@
 :root {
-  --footer-text-color: #f4f4fd;
+  --footer-text-color: #F4F4FD;
 }
 
 /* BASE */
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   margin: 0;
 }
 
@@ -26,7 +26,21 @@ button {
   background: none;
 }
 
-/* HEADER */
+/* visually-hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* HEADER - logo */
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -44,8 +58,6 @@ button {
 /* HERO */
 .hero {
   background-color: #2e2f42;
-  padding: 100px 16px;
-  text-align: center;
 }
 
 .hero-title {
@@ -53,37 +65,26 @@ button {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin: 0 0 32px;
+  margin: 0;
 }
 
 .hero-button {
-  background-color: #4d5ae5;
+  background-color: #4D5AE5;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
-  padding: 12px 24px;
-  border-radius: 4px;
-  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.hero-button:hover {
-  background-color: #404bbf;
-  color: #f4f4fd;
-}
-
+.hero-button:hover,
 .hero-button:focus {
-  background-color: #404bbf;
-  color: #f4f4fd;
+  background-color: #404BBF;
+  color: #F4F4FD;
 }
 
 /* FEATURES */
-.features-item {
-  background-color: #ffffff;
-}
-
 .features-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -99,18 +100,16 @@ button {
   color: #434455;
 }
 
-/* TEAM */
-.team {
-  background-color: #f4f4fd;
-  padding: 64px 16px;
+/* IMPORTANT: background for list item (features) */
+.features-item {
+  background-color: #FFFFFF;
 }
 
+/* TEAM */
 .team-title {
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: #2e2f42;
 }
 
@@ -133,9 +132,7 @@ button {
 .portfolio-title {
   font-size: 36px;
   line-height: 1.11;
-  text-align: center;
   letter-spacing: 0.02em;
-  text-transform: capitalize;
   color: #2e2f42;
 }
 
@@ -157,7 +154,6 @@ button {
 /* FOOTER */
 .footer {
   background-color: #2e2f42;
-  padding: 100px 16px;
 }
 
 .footer-logo {
@@ -171,7 +167,7 @@ button {
 }
 
 .footer-accent {
-  color: #f4f4fd;
+  color: #F4F4FD;
 }
 
 .footer-text {
@@ -179,7 +175,5 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
-  max-width: 264px;
-  margin-top: 16px;
 }
 
