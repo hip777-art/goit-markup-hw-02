@@ -1,228 +1,115 @@
-/* ========== BASE ========== */
+:root {
+  --footer-text-color: #f4f4fd;
+}
+
+/* BASE */
 body {
-    font-family: "Roboto", sans-serif;
-    color: #434455;
-    background-color: #FFFFFF;
-    margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+  margin: 0;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 button {
-    cursor: pointer;
-    border: none;
-    background: none;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
 
-/* visually hidden для доступности */
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-/* ========== HEADER ========== */
-.header {}
-
-/* логотип (класс строчный, >=3 букв) */
+/* HEADER */
 .header-logo {
-    font-family: "Raleway", sans-serif; /* обязательно Raleway */
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17; /* десятичный формат */
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
 }
 
-/* span внутри логотипа */
 .logo-accent {
-    color: #2e2f42;
+  color: #2e2f42;
 }
 
-/* меню — применяем те же классы к ссылкам */
-.header-menu-list {}
-.header-menu-item {}
-
-.header-menu-link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.header-menu-link:hover,
-.header-menu-link:focus {
-    color: #404bbf;
-}
-
-/* address */
-.header-address {
-    font-style: normal; /* убрать курсив */
-}
-
-.header-contacts-list {}
-.header-contacts-item {}
-
-.header-contacts-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
-.header-contacts-link:hover,
-.header-contacts-link:focus {
-    color: #404bbf;
-}
-
-/* ========== HERO (первая секция) ========== */
-/* класс секции - строчный, >=3 символов */
+/* HERO */
 .hero {
-    background-color: #2e2f42; /* обязательный цвет фона секции */
-    padding: 100px 16px;
-    text-align: center;
+  background-color: #2e2f42;
+  padding: 100px 16px;
+  text-align: center;
 }
 
 .hero-title {
-    font-size: 56px;      /* требуемый размер */
-    line-height: 1.07;    /* требуемый interline */
-    text-align: center;   /* выравнивание */
-    letter-spacing: 0.02em;
-    color: #ffffff;       /* белый цвет текста */
-    margin: 0 0 32px;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin: 0 0 32px;
 }
 
 .hero-button {
-    background-color: #4D5AE5;        /* требуемый фон кнопки */
-    font-family: "Roboto", sans-serif; /* унаследовать/задать Roboto */
-    font-weight: 500;                 /* жирность */
-    font-size: 16px;                  /* размер */
-    line-height: 1.5;                 /* межстрочный */
-    letter-spacing: 0.04em;           /* расстояние между буквами */
-    color: #ffffff;                   /* цвет текста */
-    padding: 12px 24px;
-    border-radius: 4px;
-    display: inline-block;
-    cursor: pointer;                  /* указатель курсора */
-    transition: background-color 0.18s ease;
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* hover / focus для кнопки — оба состояния должны менять фон на #404BBF */
-.hero-button:hover,
+.hero-button:hover {
+  background-color: #404bbf;
+  color: #f4f4fd;
+}
+
 .hero-button:focus {
-    background-color: #404BBF;
-    outline: none;
+  background-color: #404bbf;
+  color: #f4f4fd;
 }
 
-/* ========== FEATURES (вторая секция) ========== */
-.features {}
-
-.features-list {}
-
-.features-item {}
-
-.features-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
+/* FEATURES */
+.features-item {
+  background-color: #ffffff;
 }
 
-.features-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
-/* ========== TEAM (третья секция) ========== */
-.team {
-    background-color: #F4F4FD;
-    padding: 64px 16px;
-}
-
-.team-title {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
-}
-
-.team-list {}
-.team-item {}
-
-.team-image {}
-
-.team-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.team-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
-/* ========== PORTFOLIO (четвертая секция) ========== */
-.portfolio {}
-
-.portfolio-title {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
-}
-
-.portfolio-list {}
-.portfolio-item {}
-
-.portfolio-image {}
-
-.portfolio-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.portfolio-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-}
-
-/* ========== FOOTER ========== */
+/* FOOTER */
 .footer {
-    background-color: #2e2f42;
-    padding
+  background-color: #2e2f42;
+  padding: 100px 16px;
+}
 
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.footer-accent {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--footer-text-color);
+  max-width: 264px;
+  margin-top: 16px;
+}
 
