@@ -131,15 +131,13 @@ button {
 }
 
 .team-list {
-  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
   justify-items: center;
 }
 
 .team-item {
   background-color: #FFFFFF;
-  border-radius: 8px;
+  
   text-align: center;
 }
 
@@ -211,6 +209,7 @@ button {
   max-width: 600px;
   font-size: 16px;
 }
+
 
 
 
