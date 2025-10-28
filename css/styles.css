@@ -1,4 +1,4 @@
-/* ========== BASE ========== */
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -9,7 +9,6 @@ body {
 ul {
   list-style: none;
   margin: 0;
-  padding: 0;
 }
 
 a {
@@ -22,19 +21,6 @@ button {
   background: none;
 }
 
-/* visually hidden для доступности */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
 /* ========== HEADER ========== */
 .header {}
@@ -85,7 +71,6 @@ button {
 /* ========== HERO ========== */
 .hero {
   background-color: #2e2f42;
-  padding: 100px 16px;
   text-align: center;
 }
 
@@ -106,9 +91,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
-  padding: 12px 24px;
-  border-radius: 4px;
-  display: inline-block;
   transition: background-color 0.18s ease;
 }
 
@@ -137,7 +119,6 @@ button {
 /* ========== TEAM ========== */
 .team {
   background-color: #f4f4fd;
-  padding: 64px 16px;
 }
 
 .team-title {
@@ -193,4 +174,3 @@ button {
 .footer {
   background-color: #2e2f42;
 }
-
